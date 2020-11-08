@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+  @media (min-width: $lg) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  &--fluid {
+    max-width: 100%;
+  }
+}
