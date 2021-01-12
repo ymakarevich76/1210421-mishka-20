@@ -1,2 +1,22 @@
 .btn {
+  min-width: 260px;
+  padding: 14px 70px;
+  font-family: $ff-main;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark-grey;
+  background-color: $basic-white;
+  border: 2px solid $dark-grey;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $dark-grey;
+  }
+
+  &:active {
+    color: $white-opacity;
+  }
 }

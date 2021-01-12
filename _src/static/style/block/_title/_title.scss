@@ -1,0 +1,32 @@
+.title {
+  margin: 0;
+  font-family: $ff-main;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $c-main;
+
+  @media (min-width: $md) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.title-2 {
+  margin: 0;
+  font-family: $ff-main;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $c-main;
+  
+  @media (min-width: $md) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

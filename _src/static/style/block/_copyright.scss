@@ -1,0 +1,16 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.copyright__name {
+  font-size: 19px;
+  line-height: 18px;
+  margin-right: 30px;
+
+  @media (min-width: $md) {
+    margin-right: 25px;
+  }
+}

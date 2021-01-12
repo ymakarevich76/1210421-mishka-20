@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow-wrap {
+  display: block;
+  height: 330px;
+  max-width: 320px;
+  margin: auto;
+  position: relative;
+
+  @media (min-width: $md) {
+    min-width: 668px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 875px;
+  }
+}
+
+.slideshow-inner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: $md) {
+    width: 100%;
+  }
+}
+
+.slider {
+  list-style: none;
+  height: 100%;
+  width: 200%;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  display: flex;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slides-reviews {
+  max-width: 260px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    min-width: 668px;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 875px;
+  }
+}
+
+.slideshow-wrap input[type="radio"] {
+  width: 130px;
+  height: 50px;
+  position: absolute;
+  bottom: -109px;
+  z-index: 100;
+  visibility: hidden;
+
+  @media (min-width: $md) {
+    width: 90px;
+    bottom: 105px;
+  }
+
+  @media (min-width: $xl) {
+    bottom: 152px;
+  }
+}
+
+.slideshow-wrap__btn1 {
+  @media (min-width: $md) {
+    right: 95px;
+  }
+
+  @media (min-width: $xl) {
+    right: 20px;
+  }
+}
+
+.slideshow-wrap__btn2 {
+  position: absolute;
+  right: 60px;
+
+  @media (min-width: $md) {
+    width: 90px;
+    bottom: 93px;
+    right: 0;
+  }
+
+  @media (min-width: $xl) {
+    right: -75px;
+  }
+}
+
+.slideshow-wrap label {
+  margin: 0;
+  width: 130px;
+  height: 50px;
+  position: absolute;
+  bottom: -108px;
+  border: 1px solid $grey-border;
+  z-index: 100;
+  
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  @media (min-width: $md) {
+    width: 90px;
+    bottom: 105px;
+    border: none;
+  }
+
+  @media (min-width: $xl) {
+    width: 90px;
+    bottom: 152px;
+    border: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    @media (min-width: $md) {
+      bottom: 105px;
+    }
+  
+    @media (min-width: $xl) {
+      bottom: 152px;
+    }
+  }
+}
+
+// .slideshow-wrap .slideshow-wrap__btn1:checked ~ label[for="button-1"] {
+
+// }
+
+.slideshow-wrap label[for="button-1"] {
+  @media (min-width: $md) {
+    right: 95px;
+  }
+
+  @media (min-width: $xl) {
+    right: 20px;
+  }
+}
+
+.slideshow-wrap label[for="button-2"] {
+  margin-left: 129px;
+
+  @media (min-width: $md) {
+  right: 0;
+  margin-left: 0;
+  }
+
+  @media (min-width: $xl) {
+    right: -75px;
+  }
+}
+
+.slideshow-wrap__img {
+  position: absolute;
+  top: 12px;
+  left: 38px;
+
+  @media (min-width: $md) {
+    top: 21px;
+    left: 21px;
+  }
+
+  &--1 {
+    @media (min-width: $md) {
+      left: 29px;
+    }
+  }
+}
+
+.slideshow-wrap .slideshow-wrap__btn1:checked ~ .slideshow-inner > .slider {
+  left: 0;
+}
+
+.slideshow-wrap .slideshow-wrap__btn2:checked ~ .slideshow-inner > .slider {
+  left: -100%;
+}

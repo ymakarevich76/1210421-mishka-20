@@ -1,0 +1,194 @@
+.nav {
+  position: relative;
+  display: none;
+
+  @media (min-width: $md) {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+
+  @media (min-width: $xl) {
+    flex-direction: row-reverse;
+    position: absolute;
+    left: 50px;
+    padding-right: 12px;
+  }
+}
+
+.nav--js {
+  display: block;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $md) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--md {
+    // top: 60px;
+
+    @media (min-width: $md) {
+      display: none;
+    }
+
+    @media (min-width: $xl) {
+      position: absolute;
+
+      display: flex;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &--xl {
+
+    @media (min-width: $xl) {
+      position: absolute;
+
+      right: 26px;
+    }
+  }
+}
+
+
+.nav__item {
+  width: 100%;
+  min-height: 79px;
+  text-align: left;
+  border-bottom: 1px solid $grey-light;
+  padding: 27px 0 20px 76px;
+
+  @media (min-width: $md) {
+    width: auto;
+    min-height: 83px;
+    border-bottom: none;
+    border-left: 1px solid $grey-light;
+    padding: 27px 0px 20px 83px;
+  }
+
+  @media (min-width: $xl) {
+    min-width: 210px;
+    padding: 32px 0 32px 36px;
+  }
+}
+
+.nav__list--md .nav__item:first-child {
+  padding-bottom: 26px;
+  padding-top: 33px;
+
+  @media (min-width: $xl) {
+    padding: 32px 0 32px 26px;
+    border: none;
+  }
+}
+
+.nav__list--xl .nav__item {
+  padding-top: 28px;
+
+  // @media (min-width: $md) {
+  //   padding-top: 33px;
+  // }
+
+  &:first-child {
+    @media (min-width: $md) {
+      min-width: 81px;
+      padding: 0;
+    }
+
+    @media (min-width: $xl) {
+      border-left: 1px solid $grey-light;
+      // min-width: 81px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $md) {
+      // padding-left: 20px;
+    }
+
+    @media (min-width: $xl) {
+      min-width: 266px;
+      padding-left: 83px;
+    }
+  }
+}
+
+.nav__link {
+  position: relative;
+  border: none;
+
+  &:hover {
+    color: $c-main-opacity;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $black-opacity;
+  }
+
+  @media (min-width: $md) {
+    width: 81px;
+    height: 88px;
+    background-color: transparent;
+  }
+}
+
+.nav__link svg {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  opacity: 0.2;
+
+  @media (min-width: $md) {
+    top: 35px;
+    left: 32px;
+  }
+
+  @media (min-width: $xl) {
+    top: 35px;
+    left: 32px;
+  }
+}
+
+.nav__link:hover svg {
+  fill: $tiffany;
+  opacity: 1;
+}
+
+.nav__link:active svg {
+  fill: $tiffany;
+  opacity: 0.3;
+}
+
+.nav__link .nav__link-svg {
+  @media (min-width: $md) {
+    top: 4px;
+    left: -50px;
+  }
+
+  @media (min-width: $xl) {
+    top: 2px;
+    left: -50px;
+  }
+}
+
+@media (min-width: $md) {
+  .nav__link-text {
+    display: none;
+  }
+}
+
+@media (min-width: $xl) {
+ 
+}

@@ -1,0 +1,43 @@
+.map {
+  padding-bottom: 40px;
+
+  @media (min-width: $md) {
+    padding-bottom: 10px;
+  }
+}
+
+.map__img {
+  padding-bottom: 40px;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $md) {
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $xl) {
+    width: 527px;
+    height: 509px;
+    position: absolute;
+    top: 0;
+    right: 73px;
+    z-index: -1;
+  }
+}
+
+.map__wrap-btn {
+  text-align: center;
+
+  @media (min-width: $xl) {
+    text-align: left;
+  }
+}
+
+.map__btn {
+  padding: 15px 0;
+
+  @media (min-width: $md) {
+    // padding: 14px 35px;
+    min-width: 230px;
+  }
+}

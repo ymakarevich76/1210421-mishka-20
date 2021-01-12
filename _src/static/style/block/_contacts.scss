@@ -1,0 +1,126 @@
+.contacts {
+  // padding-bottom: 60px;
+  position: relative;
+
+  @media (min-width: $md) {
+    padding-bottom: 47px;
+  }
+  @media (min-width: $xl) {
+    padding-bottom: 94px;
+  }
+}
+
+.contacts__wrap {
+  @media (min-width: $md) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $xl) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 84px;
+  }
+}
+
+.contacts__title {
+  padding-bottom: 34px;
+  font-size: 18px;
+
+  @media (min-width: $md) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 77px;
+    padding-bottom: 37px;
+  }
+}
+
+.contacts__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $xl) {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 28px;
+  }
+}
+
+.contacts__name,
+.contacts__desc {
+  font-family: $ff-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-grey;
+
+  @media (min-width: $md) {
+    font-size: 17px;
+  }
+}
+
+.contacts__name {
+  @media (min-width: $md) {
+    margin-right: 25px;
+  }
+}
+
+.contacts__desc {
+  width: 183px; 
+}
+
+.contacts__box:last-child .contacts__desc {
+  @media (min-width: $md) {
+    min-width: 258px;
+  }
+}
+
+.contacts__box {
+  padding-bottom: 29px;
+}
+
+.contacts__box:last-child {
+  padding-bottom: 62px;
+
+  @media (min-width: $md) {
+    padding-bottom: 0;
+  }
+}
+
+.contacts__box:first-child .contacts__desc {
+  border-bottom: 1px solid $tiffany;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    color: $light-tiffany;
+  }
+
+  @media (min-width: $md) {
+    min-width: 204px;
+  }
+}
+
+.contacts__img {
+  display: none;
+
+  @media (min-width: $md) {
+    display: block;
+    position: absolute;
+    top: -23px;
+    right: 53px;
+  }
+
+  @media (min-width: $xl) {
+    top: 61px;
+    left: 139px;
+  }
+}

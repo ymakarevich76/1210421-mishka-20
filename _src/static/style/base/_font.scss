@@ -1,27 +1,30 @@
-//////////////////////////////////////////// Roboto
+//////////////////////////////////////////// Open Sans
 @font-face {
-  font-weight: 700;
-  font-family: Roboto;
-  font-style: normal;
-  font-display: swap;
-  src: url(../font/Roboto/Roboto-Bold.woff2),
-  url(../font/Roboto/Roboto-Bold.woff);
+	font-weight: 700;
+	font-family: "Open Sans";
+	font-style: normal;
+
+	font-display: swap;
+	src: url(../font/OpenSans/OpenSans-Bold.woff2),
+	url(../font/OpenSans/OpenSans-Bold.woff);
 }
 
-@font-face {
-  font-weight: 700;
-  font-family: Roboto;
-  font-style: italic;
-  font-display: swap;
-  src: url(../font/Roboto/Roboto-BoldItalic.woff2),
-  url(../font/Roboto/Roboto-BoldItalic.woff);
-}
+// @font-face {
+// 	font-weight: 700;
+// 	font-family: "Open Sans";
+// 	font-style: italic;
+
+// 	font-display: swap;
+// 	src: url(../font/OpenSans/OpenSans-BoldItalic.woff2),
+// 	url(../font/Open Sans/OpenSans-BoldItalic.woff);
+// }
 
 @font-face {
-  font-weight: 400;
-  font-family: Roboto;
-  font-style: normal;
-  font-display: swap;
-  src: url(../font/Roboto/Roboto-Regular.woff2),
-  url(../font/Roboto/Roboto-Regular.woff);
+	font-weight: 400;
+	font-family: "Open Sans";
+	font-style: normal;
+
+	font-display: swap;
+	src: url(../font/OpenSans/OpenSans-Regular.woff2),
+	url(../font/OpenSans/OpenSans-Regular.woff);
 }

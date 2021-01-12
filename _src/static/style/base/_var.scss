@@ -1,15 +1,32 @@
-// //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+////////////////////////////////////////// font-family
+$ff-main: "Open Sans", Arial, sans-serif;
 
-// //////////////////////////////////////// font-size
-$fz-main: 16px;
+////////////////////////////////////////// font-size
+$fz-main: 15px;
 
-// //////////////////////////////////////// colors
+////////////////////////////////////////// colors 
 $c-main: #000;
-$c-secondary: #ff5252;
+$c-main-opacity: rgba(0, 0, 0, 0.6);
+$black-opacity: rgba(0, 0, 0, 0.3);
+$basic-white: #fff;
+$dark-white: #f1f1f1; 
+$white-background: rgba(255, 255, 255, 0.9);
+$white-opacity: rgba(255, 255, 255, 0.3);
+$grey-back: #f9f9f9;
+$grey-border: #ececec;
+$grey-light: #e5e5e5;
+$dark-grey: #444444;
+$dark-grey-opacity: rgba(68, 68, 68, 0.1);
+$grey-light-opacity: rgba(68, 68, 68, 0.3);
+$tiffany: #63d1bb;
+$dark-tiffany: #56c3b2;
+$light-tiffany: #46c1ae;
+$grey-outline: #c6c6c6;
+$grey-shadow: rgba(0, 1, 1, 0.25);
 
-// //////////////////////////////////////// breakpoints
-$sl: 1499.98px;
+
+////////////////////////////////////////// breakpoints
+$sxl: 1499.98px;
 $xl: 1199.98px;
 $lg: 991.98px;
 $md: 767.98px;
@@ -17,7 +34,7 @@ $sm: 575.98px;
 $xsm: 425.98px;
 $ssm: 359.98px;
 
-// //////////////////////////////////////// col
+////////////////////////////////////////// col
 $col-1: 100%;
 $col-2: 50%;
 $col-3: 33.333333%;

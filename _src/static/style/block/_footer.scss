@@ -1,2 +1,38 @@
 .footer {
+  background-color: $dark-white;
+
+  @media (min-width: $md) {
+    padding-top: 25px;
+  }
+}
+
+.footer__wrap {
+  @media (min-width: $md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $md) {
+    display: block;
+    margin-right: 5px;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 23px 0;
+  list-style: none;
+  border-bottom: 1px solid $grey-light;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 40px;
 }
