@@ -36,7 +36,6 @@
   }
 
   &--md {
-    // top: 60px;
 
     @media (min-width: $md) {
       display: none;
@@ -96,10 +95,6 @@
 .nav__list--xl .nav__item {
   padding-top: 28px;
 
-  // @media (min-width: $md) {
-  //   padding-top: 33px;
-  // }
-
   &:first-child {
     @media (min-width: $md) {
       min-width: 81px;
@@ -113,9 +108,6 @@
   }
 
   &:last-child {
-    @media (min-width: $md) {
-      // padding-left: 20px;
-    }
 
     @media (min-width: $xl) {
       min-width: 266px;
@@ -187,8 +179,4 @@
   .nav__link-text {
     display: none;
   }
-}
-
-@media (min-width: $xl) {
- 
 }
