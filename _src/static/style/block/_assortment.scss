@@ -1,18 +1,18 @@
 .assortment {
   padding-top: 73px;
-  background: url("../img/ui/hero-mobile-1x.png") 0 355px;
+  background: url("../img/ui/hero-mobile-1x.png") 50% 0% no-repeat;
   margin-bottom: 30px;
 
   @media (min-width: $md) {
     position: relative;
     padding-top: 23px;
-    background: $grey-back url("../img/ui/hero-tablet-1x.png") no-repeat 0 125px;
+    background: $grey-back url("../img/ui/hero-tablet-1x.png") no-repeat 50% 100%;
     margin-bottom: 15px;
   }
 
   @media (min-width: $xl) {
     padding-top: 18px;
-    background: $grey-back url("../img/ui/hero-desktop-1x.png") no-repeat 26px -2px;
+    background: $grey-back url("../img/ui/hero-desktop-1x.png") no-repeat 50% 50%;
     margin-bottom: 131px;
   }
 }
@@ -111,6 +111,8 @@
     display: flex;
     position: absolute;
     top: 627px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -177,7 +179,6 @@
   @media (min-width: $md) {
     display: block;
     width: 100%;
-    height: 24px;
     position: absolute;
     bottom: 115px;
     left: 0;

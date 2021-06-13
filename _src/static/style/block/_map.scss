@@ -1,8 +1,25 @@
-.map {
-  padding-bottom: 40px;
+.map__wrap-img {
+  position: relative;
 
-  @media (min-width: $md) {
-    padding-bottom: 10px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: 67px;
+    height: 100px;
+    background: url("../img/icon/map-pin.svg") no-repeat;
+
+    @media (min-width: $md) {
+      top: 30%;
+      right: 45%;
+    }
+
+    @media (min-width: $xl) {
+      top: 30%;
+      right: 40%;
+    }
   }
 }
 
@@ -10,33 +27,9 @@
   padding-bottom: 40px;
   width: 100%;
   height: auto;
+  position: relative;
 
   @media (min-width: $md) {
-    padding-bottom: 53px;
-  }
-
-  @media (min-width: $xl) {
-    width: 527px;
-    height: 509px;
-    position: absolute;
-    top: 0;
-    right: 73px;
-    z-index: -1;
-  }
-}
-
-.map__wrap-btn {
-  text-align: center;
-
-  @media (min-width: $xl) {
-    text-align: left;
-  }
-}
-
-.map__btn {
-  padding: 15px 0;
-
-  @media (min-width: $md) {
-    min-width: 230px;
+    padding-bottom: 0;
   }
 }

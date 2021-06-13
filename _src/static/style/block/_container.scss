@@ -16,21 +16,4 @@
   &--fluid {
     max-width: 100%;
   }
-
-  &--narrow {
-    @media (min-width: $xl) {
-      max-width: 700px;
-      padding: 0;
-    }
-  }
-
-  &--pl-large {
-    padding-bottom: 245px;
-
-    @media (min-width: $xl) {
-      max-width: 904px;
-      padding-left: 102px;
-      padding-right: 0;
-    }
-  }
 }

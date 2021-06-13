@@ -4,25 +4,23 @@
   max-width: 320px;
 
   @media (min-width: $md) {
-   margin: 0 0 55px;
-   max-width: $md;
+   max-width: 100%;
    position: relative;
   }
 
-  @media (min-width: $xl) {
-    min-width: $xl;
-    margin: 0 0 66px;
-  }
+  // @media (min-width: $xl) {
+  //   min-width: $xl;
+  // }
 }
 
 .product-card .container {
 
   @media (min-width: $md) {
-    padding: 0 0 0 50px;
+    padding: 0 50px;
   }
 
   @media (min-width: $xl) {
-    padding-left: 0;
+    padding-left: 230px;
   }
 }
 
@@ -115,7 +113,6 @@
 
 .product-card__table-name,
 .product-card__table-desc {
-  // padding: 14px 0 0;
   font-family: $ff-main;
   font-weight: 400;
   font-size: $fz-main;

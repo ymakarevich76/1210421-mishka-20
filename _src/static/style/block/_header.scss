@@ -7,8 +7,6 @@
 }
 
 .header .container {
-  padding: 0;
-
   @media (min-width: $xl) {
     padding: 0 76px;
   }
@@ -28,18 +26,12 @@
 }
 
 .header__logo {
-  margin-left: 117px;
-
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $md) {
-    margin-left: 48px;
   }
 
   @media (min-width: $xl) {
@@ -55,14 +47,13 @@
 .header__toggle {
   position: relative;
   top: 0;
-  right: 15px;
+  right: 0;
   display: block;
   width: 21px;
   height: 20px;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  margin-right: 15px;
 
   &:hover,
   &:active {

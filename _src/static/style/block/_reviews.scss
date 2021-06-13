@@ -9,8 +9,22 @@
     margin-bottom: 69px;
   }
 
+  
   @media (min-width: $xl) {
-    background-position: 75px 5px;
+   background-position-x: 50px;
+  }
+
+}
+
+.reviews__container {
+  @media (min-width: $md) {
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: $xl) {
+   padding-left: 175px;
+   padding-bottom: 70px;
+   margin-bottom: 67px;
   }
 
 }
@@ -27,6 +41,12 @@
   }
 }
 
+.reviews .slideshow-wrap {
+  @media (min-width: $xl) {
+    margin: 0;
+  }
+}
+
 .reviews__text {
   margin: 0;
   padding-bottom: 34px;
@@ -35,10 +55,12 @@
   font-size: $fz-main;
   line-height: 30px;
   color: $dark-grey;
+  min-height: 304px;
 
   @media (min-width: $md) {
     font-size: 17px;
     padding-bottom: 61px;
+    min-height: auto;
   }
 
   @media (min-width: $xl) {
@@ -47,9 +69,7 @@
 }
 
 .reviews__text br {
-  @media (min-width: $md) {
-    display: none;
-  }
+  display: none;
 }
 
 .reviews__name {
@@ -70,6 +90,7 @@
   font-size: 17px;
   line-height: 30px;
   color: $dark-grey;
+  margin-bottom: 0;
 }
 
 .reviews__slider {
@@ -85,21 +106,27 @@
 }
 
 .reviews__btn {
+  display: flex;
+  justify-content: center;
+
   margin-bottom: 45px;
-  position: absolute;
-  bottom: 5px;
 
   @media (min-width: $md) {
-    min-width: 175px;
-    max-height: 52px;
+    max-width: 175px;
     position: absolute;
     top: 79px;
     right: 50px;
-    padding: 14px 0px;
   }
 
   @media (min-width: $xl) {
     top: 84px;
     right: 74px;
+  }
+}
+
+.reviews__btn-btn {
+  @media (min-width: $md) {
+    min-width: 175px;
+    padding: 14px 0;
   }
 }

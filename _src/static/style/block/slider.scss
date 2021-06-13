@@ -5,14 +5,16 @@
 
 .slideshow-wrap {
   display: block;
-  height: 330px;
+  min-height: 442px;
   max-width: 320px;
   margin: auto;
+  margin-bottom: 30px;
   position: relative;
 
   @media (min-width: $md) {
     min-width: 668px;
-    margin-bottom: 22px;
+    margin-bottom: 85px;
+    min-height: 210px;
   }
 
   @media (min-width: $xl) {
@@ -42,7 +44,7 @@
 }
 
 .slides-reviews {
-  max-width: 260px;
+  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -60,42 +62,52 @@
   width: 130px;
   height: 50px;
   position: absolute;
-  bottom: -109px;
+  bottom: 0;
   z-index: 100;
   visibility: hidden;
 
   @media (min-width: $md) {
     width: 90px;
-    bottom: 105px;
+    bottom: 20px;
   }
 
   @media (min-width: $xl) {
     bottom: 152px;
+    bottom: 0;
   }
+}
+
+.slideshow-wrap__btn {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
 }
 
 .slideshow-wrap__btn1 {
   @media (min-width: $md) {
     right: 95px;
+    bottom: 20px;
   }
 
   @media (min-width: $xl) {
     right: 20px;
+    bottom: 20px;
   }
 }
 
 .slideshow-wrap__btn2 {
   position: absolute;
-  right: 60px;
+  right: 30px;
 
   @media (min-width: $md) {
     width: 90px;
-    bottom: 93px;
+    bottom: 20px;
     right: 0;
   }
 
   @media (min-width: $xl) {
     right: -75px;
+    bottom: 20px;
   }
 }
 
@@ -104,7 +116,7 @@
   width: 130px;
   height: 50px;
   position: absolute;
-  bottom: -108px;
+  bottom: 0;
   border: 1px solid $grey-border;
   z-index: 100;
   
@@ -113,13 +125,13 @@
 
   @media (min-width: $md) {
     width: 90px;
-    bottom: 105px;
+    bottom: 20px;
     border: none;
   }
 
   @media (min-width: $xl) {
     width: 90px;
-    bottom: 152px;
+    bottom: 20px;
     border: none;
   }
 
@@ -131,11 +143,11 @@
     opacity: 0.3;
 
     @media (min-width: $md) {
-      bottom: 105px;
+      bottom: 0;
     }
   
     @media (min-width: $xl) {
-      bottom: 152px;
+      bottom: 0;
     }
   }
 }
@@ -143,10 +155,12 @@
 .slideshow-wrap label[for="button-1"] {
   @media (min-width: $md) {
     right: 95px;
+    bottom: 20px;
   }
 
   @media (min-width: $xl) {
     right: 20px;
+    bottom: 20px;
   }
 }
 
@@ -154,12 +168,14 @@
   margin-left: 129px;
 
   @media (min-width: $md) {
-  right: 0;
-  margin-left: 0;
+    right: 0;
+    margin-left: 0;
+    bottom: 20px;
   }
 
   @media (min-width: $xl) {
     right: -75px;
+    bottom: 20px;
   }
 }
 
@@ -169,7 +185,7 @@
   left: 38px;
 
   @media (min-width: $md) {
-    top: 21px;
+    top: 10px;
     left: 21px;
   }
 

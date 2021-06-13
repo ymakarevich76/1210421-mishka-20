@@ -46,8 +46,8 @@
       </picture>
   </section>
 
-  <section class="product-card ">
-    <div class="container container--narrow">
+  <section class="product-card">
+    <div class="container">
       <h2 class="product-card__title title">Вязаные корзинки</h2>
       <h3 class="product-card__sub-title">Товар <br>недели</h3>
       <p class="product-card__text">Экологически чистая пряжа,
@@ -129,19 +129,17 @@
   </section>
 
   <section class="reviews">
-    
-    
-    <div class="container container--pl-large">
+    <div class="container reviews__container">
       <h2 class="reviews__title title">Отзывы</h2>
       <div class="slideshow-wrap">
-        <input class="slideshow-wrap__btn1" type="radio" id="button-1" name="controls" checked="checked">
-        <label for="button-1">
-          <img class="slideshow-wrap__img slideshow-wrap__img--1" src="static/img/element/huge-arrow-left.svg" width="50" height="26" alt="">
-        </label>
-        <input class="slideshow-wrap__btn2" type="radio" id="button-2" name="controls"/>
-        <label for="button-2">
-          <img class="slideshow-wrap__img slideshow-wrap__img--2" src="static/img/element/huge-arrow-right.svg" width="50" height="26" alt="">
-        </label>
+          <input class="slideshow-wrap__btn1" type="radio" id="button-1" name="controls" checked="checked">
+          <label for="button-1">
+            <img class="slideshow-wrap__img slideshow-wrap__img--1" src="static/img/element/huge-arrow-left.svg" width="50" height="26" alt="">
+          </label>
+          <input class="slideshow-wrap__btn2" type="radio" id="button-2" name="controls"/>
+          <label for="button-2">
+            <img class="slideshow-wrap__img slideshow-wrap__img--2" src="static/img/element/huge-arrow-right.svg" width="50" height="26" alt="">
+          </label>
        
         <div class="slideshow-inner">
             <ul class="slider">
@@ -164,10 +162,9 @@
             </ul>
         </div>
     </div>
-
-
-      
-      <button class="reviews__btn btn">Написать</button>
+      <div class="reviews__btn">
+        <button class="reviews__btn-btn btn">Написать</button>
+      </div>
     </div><!--/container-->
     <picture>
       <source media="(min-width: 1199.98px)" srcset="static/img/element/zigzag-line-desktop.svg">
@@ -177,34 +174,45 @@
   </section>
 
   <section class="contacts">
-    <div class="container container--narrow">
-      <h2 class="contacts__title title-2">Контакты</h2>
+    <div class="container">
       <div class="contacts__wrap">
-        <div class="contacts__box">
-          <span class="contacts__name">e-mail:</span>
-          <span class="contacts__desc">info@mimimishkashop.ru</span>
+        <div class="contacts__wrap-info contacts__inner">
+          <h2 class="contacts__title title-2">Контакты</h2>
+          <div class="contacts__inner-box">
+            <div class="contacts__box">
+              <span class="contacts__name">e-mail:</span>
+              <span class="contacts__desc">info@mimimishkashop.ru</span>
+            </div>
+            <div class="contacts__box">
+              <span class="contacts__name">адрес:</span>
+              <span class="contacts__desc">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</span>
+            </div>
+          </div>
+          <div class="contacts__wrap-btn">
+            <button class="contacts__btn btn">Напишите нам</button>
+          </div>
+          <div class="contacts__wrap-map map">
+            <div class="map__wrap-img">
+              <picture>
+                <source media="(min-width: 1199.98px)" srcset="static/img/map/map-desktop-1x.png">
+                <source media="(min-width: 767.98px)" srcset="static/img/map/map-tablet-1x.png">
+                <img class="map__img" src="static/img/map/map-mobile-1x.png" width="320" height="455" alt="Карта">
+              </picture>
+            </div>
+          </div>
         </div>
-        <div class="contacts__box">
-          <span class="contacts__name">адрес:</span>
-          <span class="contacts__desc">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</span>
+        <div class="contacts__wrap-info map">
+          <div class="map__wrap-img">
+            <picture>
+              <source media="(min-width: 1199.98px)" srcset="static/img/map/map-desktop-1x.png">
+              <source media="(min-width: 767.98px)" srcset="static/img/map/map-tablet-1x.png">
+              <img class="map__img" src="static/img/map/map-mobile-1x.png" width="320" height="455" alt="Карта">
+            </picture>
+          </div>
         </div>
+        
       </div>
-   
-    <img class="contacts__img" src="static/img/element/flag.svg" width="47" height="81" alt="Флаг">
-
-  </div><!--/container-->
-  <div class="map">
-    <picture>
-      <source media="(min-width: 1199.98px)" srcset="static/img/map/map-desktop-1x.png">
-      <source media="(min-width: 767.98px)" srcset="static/img/map/map-tablet-1x.png">
-      <img class="map__img" src="static/img/map/map-mobile-1x.png" width="320" height="455" alt="Карта">
-    </picture>
-    <div class="container container--narrow">
-    <div class="map__wrap-btn">
-      <button class="map__btn btn">Напишите нам</button>
     </div>
-    </div>
-  </div>
 </section>
 </main>
 
